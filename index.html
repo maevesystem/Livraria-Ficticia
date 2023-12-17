@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Poesia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Espiritualidade</a>
+                </li>
+            </ul>
+            <img src="img/LogotipoLivro.png" width="70vh" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Code</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Poesia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Espiritualidade</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha biblioteca</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha lista</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe o que ler?</h2>
+        <p class="banner__texto">Encontre em nossa biblioteca o que precisa para viajar no seu próprio mundo!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">LIVROS RECOMENDADOS</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/garota-do-lago-Charlie-Donlea-ebook/dp/B0BXQFV394/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=LRMA53J4Z0X&keywords=a+garota+do+lago&qid=1702818547&s=digital-text&sprefix=a+garota+do+la%2Cdigital-text%2C205&sr=1-1">  
+                        <img src="img/__MACOSX/agarotadolago.jpg"
+                        width="50vh"  alt="Livro A Garota do lago"></a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/Biblioteca-Meia-Noite-Matt-Haig-ebook/dp/B09BKDLD4F/ref=sr_1_1?crid=28ZPHSELX3K2F&keywords=biblioteca+da+meia+noite&qid=1702818564&s=digital-text&sprefix=bib%2Cdigital-text%2C217&sr=1-1">  
+                        <img src="img/__MACOSX/abibliotecadameianoite.jpg"
+                        width="50vh"  alt="Livro Biblioteca da Meia Noite"></a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/Os-sete-maridos-Evelyn-Hugo-ebook/dp/B07XTNKQKF/ref=sr_1_2?__mk_pt_BR=ÅMÅŽÕÑ&crid=208M4BI3RMQFZ&keywords=os+sete&qid=1702818557&s=digital-text&sprefix=os+se%2Cdigital-text%2C202&sr=1-2">  
+                        <img src="img/__MACOSX/ossetemaridos.jpg"
+                        width="50vh" alt="Livro Os sete maridos de evelyn hugo"></a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/Verity-Colleen-Hoover-ebook/dp/B084Q6YFSS/ref=sr_1_1?crid=1XPIRJCKIU1QU&keywords=verity&qid=1702818533&s=digital-text&sprefix=verity%2Cdigital-text%2C207&sr=1-1">  
+                        <img src="img/__MACOSX/verity.jpg" width="50vh" alt="Livro Verity"></a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/assim-que-acaba-Colleen-Hoover-ebook/dp/B078Z42ZFQ/ref=sr_1_1?crid=3ONKJ6KBLKH36&keywords=é+assim+que+acaba&qid=1702818539&s=digital-text&sprefix=é+assim%2Cdigital-text%2C229&sr=1-1">  
+                        <img src="img/__MACOSX/eassimqueacaba.jpg" width="50vh" alt="Livro É assim que acaba"></a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/assim-que-começa-Vol-acaba-ebook/dp/B0BDSB3YLP/ref=sr_1_2?crid=3ONKJ6KBLKH36&keywords=é+assim+que+acaba&qid=1702818539&s=digital-text&sprefix=é+assim%2Cdigital-text%2C229&sr=1-2">  
+                        <img src="img/__MACOSX/eassimquecomeça.jpg" width="50vh" alt="livro É assim que começa"></a></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">With You</h2>
+                        <p class="descrição__texto">O que você faria se beijasse seu melhor amigo de infância e ele limpasse 
+                            a boca depois que vocês se separassem?
+                            É assim que a amizade mais falada de toda UCLA é colocada à prova.
+                            Cloud Calloway é a melhor amiga de infância do quarterback astro da liga de futebol americano universitário e capitão do time da Universidade da Califórnia, o Bruins.
+                            A garota nerd, apaixonada por números e viciada em Diário de uma Paixão, é uma verdadeira low profile que vive uma vida tecnicamente tranquila entre seu dormitório, o dormitório do seu melhor amigo, suas aulas e o campo de futebol da UCLA.
+                            Ela odeia esse esporte, mas ama seu quarterback com todas as forças.
+                            Ashton Arkins é o capitão do time do Bruins, o astro da nova temporada e, atualmente, o jogador mais promissor que comentaristas, especialistas e analistas já viram jogar em anos. Ah, e não menos importante: ele é o cabeça o trio mais falado do campus, o ABC do Bruins.
+                            Cloud e Ashton são inseparáveis.
+                            Eles fazem tudo juntos.
+                            Eles estão sempre perto um do outro.
+                            Espaço pessoal não existe entre eles, e é exatamente isso que faz com que todo mundo duvide da amizade existente ali.
+                            Eles são mesmo só amigos?
+                            A amizade de Ashton é a coisa mais preciosa que Cloud tem na vida.
+                            O amor de Cloud é a sorte grande de Ashton.
+                            Ela preza pela amizade.
+                            Ele não consegue tirar os olhos dela.
+                            Ela não quer que as coisas estraguem.
+                            Ele só precisa de uma chance pra fazer dar certo.
+                            Ela luta contra os sentimentos.
+                            Ele já se entregou há muito tempo.
+                            O que fazer quando você desperdiça a chance que esperou a vida toda pra ter?
+                            Essa é a história de como dois melhores amigos arruinaram uma amizade de quase duas décadas, mas não seria essa ruína o presságio de uma paixão descontrolada e inevitável?
+                            Uma coisa é certa:
+                            amigos não olham para amigos da maneira que Cloud e Ashton olham um para o outro.
+                        
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/__MACOSX/withyou.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="https://www.amazon.com.br/YOU-melhor-Quarterback-Garotos-Bruins-ebook/dp/B0BZT3RBHN?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Sucessos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/Grande-Aposta-ponto-aposta-Apostas-ebook/dp/B01MS1NYXQ?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/agrandeaposta.jpg"
+                            alt="Livro Grande-Aposta">  </a> </div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/SEM-RESTRI%C3%87%C3%95ES-Assistente-contrato-Thompson-ebook/dp/B0BHPYXYHX?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/semrestriçoes.jpg"
+                            alt="Livro Sem Restrições"> </a> </div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/SEM-AMARRAS-Parte-Heaven-Race-ebook/dp/B09JPF4BMR?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/semamarras.jpg"
+                            alt="Livro Sem Amarras">  </a> </div>
+                    <div class="swiper-slide"><a href="https://www.amazon.com.br/HUNTER-Capturado-por-Heaven-Race-ebook/dp/B0918BMWWS?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/hunter.jpg" alt="Livro Hunter"> </a> </div>
+                    <div class="swiper-slide"><a href="https://www.amazon.com.br/SERENA-Esperança-tê-sempre-Knockdown-ebook/dp/B06XCFLVF8?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/serena.jpg" alt="Livro Serena"> </a></div>
+                    <div class="swiper-slide"> <a href="https://www.amazon.com.br/Aposta-Perfeita-aposta-perfeita-Apostas-ebook/dp/B0756Q46C9?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.8_vFmfZtR_kZE9BwCGH7KbKfkQez0l9h_8ve3CzFADwdekpDAv8lcmwFdUdZqn4yG8XpmDWBxdy3iiFyMex3xRFgzpUq0Lhp8cPMnTapcLm2JVdciB3I0x5HwkApdLEAEecPXGRLpckGZ2ziqbkwXUF8gESMiUk2ATFM9nDFw1OBWcA0vWHsf41Qs1k0cH46yIHAf10U0A5EK4FcyBPHQTCkluxd3lVNAbZR3567qbg.M7se2ggydAy9mDbkXyPP59__aj-_gFffkErhp7Gg3zw&dib_tag=AUTHOR">
+                        <img src="img/__MACOSX/aapostaperfeita.jpg"
+                        alt="livro A Aposta Perfeita"> </a> </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autora Destaque</h3>
+                        <h2 class="descrição__titulo-livro">Heaven Race</h2>
+                        <p class="descrição__texto">Heaven Race é uma autora independente nordestina nascida em 1997, cuja paixão pela escrita veio desde o início do início de sua adolescência — 
+                            obviamente por meio das boas e velhas fanfics.
+                            Sua carreira como autora independente na Amazon começou no 
+                            fim de 2016 e desde então nunca mais parou.
+                            Suas mais de 10 obras estão todas publicadas na plataforma.
+                            A canceriana ultrassensível, chorona e chocólatra tem dividido seu tempo entre a vida real com sua família e o país das maravilhas dos livros que escreve — que nem sempre são só maravilhas. Com a cabeça sempre a mil,
+                            qualquer palavra é motivo para um enredo novo surgir em sua mente.
+                            Para mais informações, siga no Instagram: @autoraheavenrace ou clique em "Saiba Mais".
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/__MACOSX/heavenrace.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="https://www.instagram.com/autoraheavenrace/" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">ROMANCE</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">TERROR</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">FANTASIA</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Desenvolvido por @MaeveSystem</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Redes</li>
+            <li class="lista-rodapé__item">
+                <img src="img/__MACOSX/instagram.png" width="3%" alt="Logo Instagram">
+                <a href="https://www.instagram.com/maevesystem/" class="lista-rodapé__link">Instagram</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/__MACOSX/discord.png" width="3%" alt="Logo Discord">
+                <a href="https://discord.gg/AunjAWT5uy" class="lista-rodapé__link">Discord</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/__MACOSX/tiktok.png" alt="Logo Tiktok" width="3%">
+                <a href=https://www.tiktok.com/@maevesystem" class="lista-rodapé__link">Tiktok</a>
+            </li>
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Sobre o Projeto</li>
+            <a class="lista-rodapé__link">Este é um projeto fictício de uma livraria desenvolvido como parte do curso da Alura. O objetivo principal é praticar os conceitos aprendidos no curso 
+                e criar uma interface de usuário atraente para apresentar livros.
+                Os links de compra direcionam os usuários para a Amazon, e links para 
+                redes sociais proporcionam fácil acesso às minhas redes e à rede da 
+                autora destaque.</a>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
