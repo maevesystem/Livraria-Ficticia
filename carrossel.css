@@ -97,3 +97,9 @@
         margin: 2em auto;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .descrição__imagem {
+        width: 50%;
+    }
+}
