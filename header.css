@@ -20,6 +20,12 @@
     align-items: center;
 }
 
+.container__texto {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .container__imagem {
     padding: 1em;
 }
